@@ -75,11 +75,11 @@ public class Main extends Application {
         Scene secondary = new Scene(game, 500, 200);
         primaryStage.setScene(secondary);
         primaryStage.show();
-        long x = System.currentTimeMillis();
-        long y = 0;
-        while (y != x+1000)
+        int x = (int)(System.currentTimeMillis() x+500);
+        int y = 0;
+        while (y != x)
         {
-            y = System.currentTimeMillis();
+            y = (int)System.currentTimeMillis();
         }
         System.out.print(System.currentTimeMillis());
         reset(primaryStage);
@@ -104,7 +104,15 @@ public class Main extends Application {
         game.getChildren().add(hitBox);
         Scene secondary = new Scene(game,500,200);
         primaryStage.setScene(secondary);
-        primaryStage.show();
+        primaryStage.show(); 
+        
+        int x = (int)(System.currentTimeMillis() x+500);
+        int y = 0;
+        while (y != x)
+        {
+            y = (int)System.currentTimeMillis();
+        }
+        System.out.print(System.currentTimeMillis());
 
     }
 
